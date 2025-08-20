@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R3S Interactive - Mobile Game Developers</title>
+    <style>
+        /* --- Basic Styling --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #121212; /* Dark background for a gaming feel */
+            color: #e0e0e0; /* Light gray text */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem 0;
+            border-bottom: 2px solid #00aaff; /* A pop of color */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('https://via.placeholder.com/1500x800.png/1a1a1a/00aaff?text=Game+Background') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #00aaff;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0088cc;
+        }
+
+        /* --- Sections --- */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* --- Games Grid --- */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 170, 255, 0.3);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game-card-content {
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .game-card h3 {
+            margin-top: 0;
+            color: #00aaff;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">R3S Interactive</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>Crafting Unforgettable Mobile Experiences</h1>
+            <p>We build games that are innovative, engaging, and fun to play on the go.</p>
+            <a href="#games" class="cta-button">Explore Our Games</a>
+        </section>
+
+        <section class="section" id="games">
+            <div class="container">
+                <h2>Our Games</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x200.png/00aaff/FFFFFF?text=Game+One" alt="Game One Screenshot">
+                        <div class="game-card-content">
+                            <h3>Project Nebula</h3>
+                            <p>An endless space runner with stunning visuals and challenging obstacles. Collect resources and upgrade your ship!</p>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x200.png/ff6347/FFFFFF?text=Game+Two" alt="Game Two Screenshot">
+                        <div class="game-card-content">
+                            <h3>Cyber Dash</h3>
+                            <p>A fast-paced cyberpunk puzzle game. Hack terminals and escape before the system detects you.</p>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="https://via.placeholder.com/300x200.png/32cd32/FFFFFF?text=Coming+Soon" alt="Coming Soon">
+                        <div class="game-card-content">
+                            <h3>Quest of the Ancients</h3>
+                            <p>An upcoming fantasy RPG. Explore dungeons, fight monsters, and uncover legendary loot. Coming soon!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about" style="background-color: #1e1e1e;">
+            <div class="container">
+                <h2>About R3S Interactive</h2>
+                <p style="max-width: 800px; margin: 0 auto;">
+                    Founded in 2025, R3S Interactive is a passionate team of developers, designers, and storytellers dedicated to creating top-tier mobile games. Our mission is to push the boundaries of mobile gaming and deliver experiences that resonate with players worldwide.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 R3S Interactive. All Rights Reserved.</p>
+        <p>Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+
+</body>
+</html>
